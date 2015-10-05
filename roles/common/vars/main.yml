@@ -1,0 +1,46 @@
+---
+# common variables
+
+local_home: "{{ lookup('env', 'HOME') }}"
+homebrew_token: "{{ lookup('env', 'HOMEBREW_GITHUB_API_TOKEN') }}"
+username: ameighc
+brew_apps:
+  - android-sdk
+  - brew-cask
+  - ffmpeg
+  - git
+  - gradle
+  - node
+  - mono
+  - tidy-html5
+  - vim
+  - wget
+# homebrew/php/ITEM elements
+brew_php_apps:
+  - php56
+  - php-code-sniffer
+  - phpmd
+# homebrew that has cask dependencies
+brew_postcask_apps:
+  - maven
+cask_apps:
+  - atom
+  - cord
+  - firefox
+  - gimp
+  - google-chrome
+  - hexchat
+  - iterm2
+  - java
+  - password-gorilla
+  - phpstorm
+#  - silverlight
+  - skype
+  - spotifree
+  - spotify
+  - steam
+  - unrarx
+  - vagrant
+  - virtualbox
+  - vlc
+  

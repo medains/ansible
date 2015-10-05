@@ -1,0 +1,23 @@
+---
+- name: Fetch dotfiles repo
+  git: repo=https://github.com/medains/dotfiles.git dest=~/src/dotfiles
+  failed_when: false
+
+- name: Run dotfiles setup
+  shell: cd ~/src/dotfiles && ./setup.sh
+
+- name: Fail if no homebrew token set
+  fail: msg="Set HOMEBREW_GITHUB_API_TOKEN environment variable"
+  when: homebrew_token == ""
+
+- name: Collect uname
+  shell: uname -s
+  register: uname
+
+- name: set uname fact
+  set_fact:
+    uname: "{{uname.stdout}}"
+
+- name: Include osx
+  include: osx.yml
+  when: uname | lower == 'darwin'
