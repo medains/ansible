@@ -6,7 +6,7 @@ homebrew_token: "{{ lookup('env', 'HOMEBREW_GITHUB_API_TOKEN') }}"
 username: ameighc
 brew_apps:
   - android-sdk
-  - brew-cask
+  - caskroom/cask/brew-cask
   - ffmpeg
   - git
   - gradle
