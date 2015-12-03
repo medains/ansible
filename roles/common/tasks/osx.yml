@@ -10,6 +10,10 @@
   with_items: brew_apps
   when: item not in installed_brews.stdout_lines
 
+- name: Install homebrew cask
+  homebrew: name=caskroom/cask/brew-cask state=present
+  when: '"brew-cask" not in installed_brews.stdout_lines'
+
 - name: Install php brews
   homebrew: name=homebrew/php/{{ item }} state=present
   with_items: brew_php_apps
