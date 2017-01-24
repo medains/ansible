@@ -16,7 +16,7 @@ function remove() {
 # Kill the preference cache
 killall -u `whoami` cfprefsd
 
-for x in "Microsoft Word" "Microsoft PowerPoint" "Microsoft Outlook" "Microsoft Lync" \
+for x in "Microsoft Word" "Microsoft Excel" "Microsoft OneNote" "Microsoft PowerPoint" "Microsoft Outlook" "Microsoft Lync" \
     Contacts Calendar Maps Photos Messages FaceTime iTunes iBooks \
     Siri Mail Reminders "Photo Booth" \
     myMacInfo; do 
