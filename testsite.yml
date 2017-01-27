@@ -1,0 +1,13 @@
+---
+- hosts: all
+  gather_facts: no
+  vars_prompt:
+    - name: "param"
+      prompt: "Enter role"
+      private: no
+  tasks:
+    - name:
+      group_by: key=thing_{{ param }}
+- hosts: thing_abc
+  tasks:
+    - debug: msg="thing_abc GROUP selected"
