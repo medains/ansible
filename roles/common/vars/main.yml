@@ -38,6 +38,7 @@ cask_apps:
   - spotifree
   - spotify
   - steam
+  - ubersicht
   - unrarx
   - vagrant
   - virtualbox
