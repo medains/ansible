@@ -5,6 +5,7 @@ local_home: "{{ lookup('env', 'HOME') }}"
 homebrew_token: "{{ lookup('env', 'HOMEBREW_GITHUB_API_TOKEN') }}"
 username: ameighc
 brew_apps:
+  - ag
   - android-sdk
   - ffmpeg
   - git
@@ -43,4 +44,3 @@ cask_apps:
   - vagrant
   - virtualbox
   - vlc
-  
