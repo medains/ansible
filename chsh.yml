@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: yes
+  tasks:
+    - lineinfile: dest=/etc/shells
+                  line='/usr/local/bin/bash'
+      become: true
+    - user:
+        name: "{{ansible_user_id}}"
+        shell: /usr/local/bin/bash
+      become: true
+
