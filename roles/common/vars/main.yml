@@ -7,17 +7,21 @@ username: ameighc
 brew_apps:
   - ag
   - android-sdk
+  - bash
+  - coreutils
   - ffmpeg
   - git
   - gradle
+  - keybase
   - node
   - mono
+  - terminal-notifier
   - tidy-html5
   - vim
   - wget
 # homebrew/php/ITEM elements
 brew_php_apps:
-  - php56
+  - php70
   - php-code-sniffer
   - phpmd
 # homebrew that has cask dependencies
@@ -25,6 +29,7 @@ brew_postcask_apps:
   - maven
 cask_apps:
   - atom
+  - burn
   - cord
   - firefox
   - gimp
