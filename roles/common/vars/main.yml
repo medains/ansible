@@ -13,14 +13,19 @@ brew_apps:
   - git
   - gradle
   - keybase
+  - ledger
   - node
   - mono
+  - mtr
   - terminal-notifier
   - tidy-html5
   - vim
+  - watch
   - wget
+  - wine
 # homebrew/php/ITEM elements
 brew_php_apps:
+  - composer
   - php70
   - php-code-sniffer
   - phpmd
@@ -29,6 +34,7 @@ brew_postcask_apps:
   - maven
 cask_apps:
   - atom
+  - bbc-iplayer-downloads
   - burn
   - cord
   - firefox
@@ -37,6 +43,8 @@ cask_apps:
   - hexchat
   - iterm2
   - java
+  - keybase
+  - obs
   - password-gorilla
   - phpstorm
 #  - silverlight
