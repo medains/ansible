@@ -5,24 +5,24 @@ local_home: "{{ lookup('env', 'HOME') }}"
 homebrew_token: "{{ lookup('env', 'HOMEBREW_GITHUB_API_TOKEN') }}"
 username: ameighc
 brew_apps:
-  - ag
-  - android-sdk
   - bash
   - coreutils
   - ffmpeg
   - git
-  - gradle
+#  - gradle
   - keybase
-  - ledger
   - node
-  - mono
   - mtr
   - terminal-notifier
   - tidy-html5
   - vim
   - watch
   - wget
-  - wine
+#  - ag
+#  - android-sdk
+#  - ledger
+#  - mono
+#  - wine
 # homebrew/php/ITEM elements
 brew_php_apps:
   - composer
@@ -33,27 +33,27 @@ brew_php_apps:
 brew_postcask_apps:
   - maven
 cask_apps:
-  - atom
+#  - atom
   - bbc-iplayer-downloads
   - burn
-  - cord
+#  - cord
   - firefox
   - gimp
   - google-chrome
-  - hexchat
+#  - hexchat
   - iterm2
   - java
-  - keybase
-  - obs
-  - password-gorilla
-  - phpstorm
+#  - keybase
+#  - obs
+#  - password-gorilla
+#  - phpstorm
 #  - silverlight
-  - skype
-  - spotifree
-  - spotify
-  - steam
+#  - skype
+#  - spotifree
+#  - spotify
+#  - steam
   - ubersicht
   - unrarx
-  - vagrant
-  - virtualbox
+#  - vagrant
+#  - virtualbox
   - vlc
